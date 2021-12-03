@@ -2,5 +2,6 @@
 
 export("%>%")
 export(mixpanel_api)
+export(mixpanel_export_events)
 export(mixpanel_insights)
 importFrom(magrittr,"%>%")

@@ -7,7 +7,19 @@
 mixpanel_api(method, project_id, ..., username, secret, eu_region = FALSE)
 }
 \arguments{
-\item{eu_region}{}
+\item{method}{method to use, read the API documentation [here](https://developer.mixpanel.com/reference/overview)}
+
+\item{project_id}{required, an integer representing the id of the project}
+
+\item{...}{optional parameters passed onto other functions. Read the Mixpanel API documentation [here]("https://developer.mixpanel.com/reference/overview)}
+
+\item{username}{required, service account username https://developer.mixpanel.com/reference/service-accounts}
+
+\item{secret}{required, service account secret https://developer.mixpanel.com/reference/service-accounts}
+
+\item{eu_region}{optional, set to TRUE if you are enrolled in the EU server residency}
+
+\item{bookmark_id}{required, bookmark_id of your Insights report can be found from the url: https://mixpanel.com/report/1/insights#report/<YOUR_BOOKMARK_ID>/example-report}
 }
 \value{
 

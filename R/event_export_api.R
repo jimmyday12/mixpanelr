@@ -1,3 +1,19 @@
+#' Title
+
+#' @param project_id required, an integer representing the id of the project
+#' @param from_date required string, The date in yyyy-mm-dd format to query to. This date is inclusive.
+#' @param to_date required string, The date in yyyy-mm-dd format from which to begin querying from. This date is inclusive.
+#' @param limit optional integer, The max number of events to be returned.
+#' @param event optional vector, The event or events that you wish to get data for
+#' @param where optional string, An expression to filter events by. More info on expression sequence structure can be found [here](https://developer.mixpanel.com/reference-link/segmentation-expressions)
+#' @param username required, service account username see https://developer.mixpanel.com/reference/service-accounts
+#' @param secret required, service account secret see https://developer.mixpanel.com/reference/service-accounts
+#' @param eu_region optional, set to TRUE if you are enrolled in the EU server residency
+#'
+#' @return returns a tibble
+#' @export
+#'
+#' @examples
 mixpanel_export_events <- function(project_id,
                                    from_date,
                                    to_date,

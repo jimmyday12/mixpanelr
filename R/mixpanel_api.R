@@ -1,11 +1,13 @@
 #' Title
-#'
-#' @param method
-#' @param project_id
-#' @param ...
-#' @param username
-#' @param secret
-#' @param eu_region
+
+
+#' @param bookmark_id required, bookmark_id of your Insights report can be found from the url: https://mixpanel.com/report/1/insights#report/<YOUR_BOOKMARK_ID>/example-report
+#' @param method method to use, read the API documentation [here](https://developer.mixpanel.com/reference/overview)
+#' @param project_id required, an integer representing the id of the project
+#' @param ... optional parameters passed onto other functions. Read the Mixpanel API documentation [here]("https://developer.mixpanel.com/reference/overview)
+#' @param username required, service account username https://developer.mixpanel.com/reference/service-accounts
+#' @param secret required, service account secret https://developer.mixpanel.com/reference/service-accounts
+#' @param eu_region optional, set to TRUE if you are enrolled in the EU server residency
 #'
 #' @return
 #' @export
