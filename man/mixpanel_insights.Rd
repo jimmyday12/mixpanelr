@@ -32,3 +32,8 @@ returns a tibble with the data from the insights report
 \description{
 Return data from a saved insights report in Mixpanel
 }
+\examples{
+\dontrun{
+ mixpanel_insights()
+ }
+}

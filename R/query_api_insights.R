@@ -13,6 +13,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#'  mixpanel_insights()
+#'  }
 mixpanel_insights <- function(project_id, bookmark_id, workspace_id = NULL,
                               username, secret, eu_region = FALSE) {
 

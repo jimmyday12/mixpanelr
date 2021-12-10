@@ -18,12 +18,15 @@ mixpanel_api(method, project_id, ..., username, secret, eu_region = FALSE)
 \item{secret}{required, service account secret https://developer.mixpanel.com/reference/service-accounts}
 
 \item{eu_region}{optional, set to TRUE if you are enrolled in the EU server residency}
-
-\item{bookmark_id}{required, bookmark_id of your Insights report can be found from the url: https://mixpanel.com/report/1/insights#report/<YOUR_BOOKMARK_ID>/example-report}
 }
 \value{
-
+a response object
 }
 \description{
 Title
+}
+\examples{
+\dontrun{
+ mixpanel_api()
+ }
 }
