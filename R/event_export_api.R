@@ -1,4 +1,6 @@
-#' Title
+#' Export Mixpanel Events
+#'
+#' Use the Mixpanel Export Data API to return raw events ffrom specific date range. Documentation on the API itself can be found at the [API Documentation](https://developer.mixpanel.com/reference/raw-event-export).
 
 #' @param project_id required, an integer representing the id of the project
 #' @param from_date required string, The date in yyyy-mm-dd format to query to. This date is inclusive.
@@ -14,6 +16,9 @@
 #' @export
 #'
 #' @examples
+#' \dontrun{
+#'  mixpanel_export_events(id, "2021-11-01", "2021-12-01")
+#'  }
 mixpanel_export_events <- function(project_id,
                                    from_date,
                                    to_date,

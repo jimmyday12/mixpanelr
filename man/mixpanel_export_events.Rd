@@ -2,7 +2,7 @@
 % Please edit documentation in R/event_export_api.R
 \name{mixpanel_export_events}
 \alias{mixpanel_export_events}
-\title{Title}
+\title{Export Mixpanel Events}
 \usage{
 mixpanel_export_events(
   project_id,
@@ -39,5 +39,10 @@ mixpanel_export_events(
 returns a tibble
 }
 \description{
-Title
+Use the Mixpanel Export Data API to return raw events ffrom specific date range. Documentation on the API itself can be found at the [API Documentation](https://developer.mixpanel.com/reference/raw-event-export).
+}
+\examples{
+\dontrun{
+ mixpanel_export_events(id, "2021-11-01", "2021-12-01")
+ }
 }
